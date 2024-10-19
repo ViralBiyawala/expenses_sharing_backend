@@ -1,0 +1,11 @@
+Title,Amount,Split Type,Created By,Created At,Split Info
+Dinner,100.00,Equal,viral,2024-10-19 15:18:03.331671+00:00,viral: 50.00 (None%); vaibhav: 50.00 (None%)
+Groceries,80.00,Exact,viral,2024-10-19 15:19:03.181450+00:00,viral: 50.00 (None%); vaibhav: 30.00 (None%)
+Groceries,80.00,Exact,vaibhav2,2024-10-19 15:20:47.832837+00:00,viral: 50.00 (None%); vaibhav: 30.00 (None%)
+Vacation,1000.00,Percentage,vaibhav2,2024-10-19 15:21:50.946521+00:00,viral: 600.00 (60.00%); vaibhav: 400.00 (40.00%)
+Vacation,1000.00,Percentage,vaibhav2,2024-10-19 15:22:11.333775+00:00,viral: 600.00 (60.00%); viral: 400.00 (40.00%)
+Vacation,1000.00,Percentage,vaibhav2,2024-10-19 15:22:17.636030+00:00,viral: 600.00 (60.00%); vaibhav: 400.00 (40.00%)
+Dinner,100.00,Equal,viral,2024-10-19 15:33:50.559234+00:00,viral: 50.00 (None%); vaibhav: 50.00 (None%)
+Dinner,100.00,Equal,viral,2024-10-19 15:33:55.562259+00:00,viral: 50.00 (None%); vaibhav: 50.00 (None%)
+pARTY,8000.00,Exact,vaibhav2,2024-10-19 15:49:11.191448+00:00,viral: 5010.00 (None%); vaibhav: 2990.00 (None%)
+Party birthday,8000.00,Percentage,viral,2024-10-19 15:51:32.146196+00:00,viral: 6000.00 (75.00%); vaibhav: 2000.00 (25.00%)
