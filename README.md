@@ -56,6 +56,11 @@ This is a backend application built with Django and SQLite for managing daily ex
     python manage.py runserver
     ```
 
+6. **Run Test Cases**
+   ```bash
+   python manage.py test expenses
+   ```
+
 ## API Endpoints
 
 ### User Management
@@ -63,7 +68,7 @@ This is a backend application built with Django and SQLite for managing daily ex
 #### Create User
 - **URL:** `/api/users/`
 - **Method:** POST
-- **Authentication:** Not Required
+- **Authorization:** Not Required ( ** future work: Can add email or mobile based OTP )
 - **Body:**
    ```json
    {
@@ -169,10 +174,10 @@ This is a backend application built with Django and SQLite for managing daily ex
    }
    ```
 
-#### List Expenses
-- **URL:** `/api/expenses/`
+#### List All Expenses
+- **URL:** `/api/expenses/overall_expenses/`
 - **Method:** GET
-- **Authentication:** Required
+- **Authentication:** Required (Admin Only)
 
 #### Retrieve Expense
 - **URL:** `/api/expenses/{id}/`
@@ -183,22 +188,17 @@ This is a backend application built with Django and SQLite for managing daily ex
 - **URL:** `/api/expenses/{id}/`
 - **Method:** PUT
 - **Authentication:** Required
-- **Body:** (similar to Create Expense)
+- **Body:** (similar to Create Expense) (Admin Only)
 
 #### Delete Expense
 - **URL:** `/api/expenses/{id}/`
 - **Method:** DELETE
-- **Authentication:** Required
+- **Authentication:** Required (Admin Only)
 
-#### User Expenses
+#### User's Expenses
 - **URL:** `/api/expenses/user_expenses/`
 - **Method:** GET
 - **Authentication:** Required
-
-#### Overall Expenses
-- **URL:** `/api/expenses/overall_expenses/`
-- **Method:** GET
-- **Authentication:** Required (Admin Only)
 
 #### Download Balance Sheet
 - **URL:** `/api/expenses/download_balance_sheet/`
