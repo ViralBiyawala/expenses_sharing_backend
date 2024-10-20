@@ -60,7 +60,7 @@ This is a backend application built with Django and SQLite for managing daily ex
 
 3. **Move to the Expenses Folder**
     ```bash
-    cd expenses
+    cd expense_sharing
     ```
 
 4. **Run Migrations**
