@@ -6,7 +6,6 @@
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [Setup Instructions](#setup-instructions)
-- [Admin User](#admin-user)
 - [Authentication](#authentication)
 - [User API Endpoints](#user-management)
 - [Authentication API Endpoints](#authentication)
@@ -75,9 +74,14 @@ This is a backend application built with Django and SQLite for managing daily ex
    python manage.py migrate
    ```
 
-6. **Start the Development Server**
+6. **Admin User**
+
+   *IMPORTANT* -> Create this user to run admin-only API Endpoints. Users created by [Create User Endpoint](#create-user) will not have admin privileges.
+
+   An admin user can be created using the Django admin panel or by running the following command:
+
    ```bash
-   python manage.py runserver
+   python manage.py createsuperuser
    ```
 
 7. **Run Test Cases**
@@ -85,16 +89,10 @@ This is a backend application built with Django and SQLite for managing daily ex
    python manage.py test expenses
    ```
 
-
-## Admin User
-
-*IMPORTANT* -> Create this user to run admin-only API Endpoints. Users created by [Create User Endpoint](#create-user) will not have admin privileges.
-
-An admin user can be created using the Django admin panel or by running the following command:
-
-```bash
-python manage.py createsuperuser
-```
+8. **Start the Development Server**
+   ```bash
+   python manage.py runserver
+   ```
 
 ## Authentication
 
@@ -105,7 +103,6 @@ Authorization: Bearer <your_jwt_token>
 ```
 
 Remember to replace placeholder values (like user IDs, amounts, etc.) with actual values when making requests.
-
 
 ## API Endpoints
 
