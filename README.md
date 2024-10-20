@@ -48,36 +48,43 @@ This is a backend application built with Django and SQLite for managing daily ex
 ## Setup Instructions
 
 1. **Clone the Repository**
-    ```bash
-    git clone https://github.com/viralbiyawala/expenses_sharing_backend.git
-    cd expenses_sharing_backend
-    ```
-    
-2. **Install Dependencies**
-    ```bash
-    pip install -r requirements.txt
-    ```
+   ```bash
+   git clone https://github.com/viralbiyawala/expenses_sharing_backend.git
+   cd expenses_sharing_backend
+   ```
 
-3. **Move to the Expenses Folder**
-    ```bash
-    cd expense_sharing
-    ```
+2. **Create and Activate a Virtual Environment**
+   ```bash
+   python -m venv env
+   source env/bin/activate  # On Windows use `venv\Scripts\activate`
+   ```
 
-4. **Run Migrations**
-    ```bash
-    python manage.py makemigrations
-    python manage.py migrate
-    ```
+3. **Install Dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-5. **Start the Development Server**
-    ```bash
-    python manage.py runserver
-    ```
+4. **Move to the Expenses Folder**
+   ```bash
+   cd expense_sharing
+   ```
 
-6. **Run Test Cases**
+5. **Run Migrations**
+   ```bash
+   python manage.py makemigrations
+   python manage.py migrate
+   ```
+
+6. **Start the Development Server**
+   ```bash
+   python manage.py runserver
+   ```
+
+7. **Run Test Cases**
    ```bash
    python manage.py test expenses
    ```
+
 
 ## Admin User
 
