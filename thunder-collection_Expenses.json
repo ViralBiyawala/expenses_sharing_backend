@@ -1,0 +1,279 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Expenses",
+    "collectionId": "26c81a25-73f0-4d87-9956-8a6e42d534a7",
+    "dateExported": "2024-10-20T04:56:12.784Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "cabd2e4b-c986-46ab-bf43-1aba54ed9e92",
+            "colId": "26c81a25-73f0-4d87-9956-8a6e42d534a7",
+            "containerId": "",
+            "name": "CREATE_USER",
+            "url": "http://127.0.0.1:8000/api/users/",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-10-19T10:55:40.965Z",
+            "modified": "2024-10-20T04:43:21.035Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"email\": \"extra@example.com\",\n    \"username\": \"Extra\",\n    \"first_name\": \"New\",\n    \"last_name\": \"Name\",\n    \"password\": \"extranew\"\n}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "85deaaa7-cfd0-4f6b-9f8a-8662018a81b1",
+            "colId": "26c81a25-73f0-4d87-9956-8a6e42d534a7",
+            "containerId": "",
+            "name": "GET_TOKEN",
+            "url": "http://127.0.0.1:8000/api/token/",
+            "method": "POST",
+            "sortNum": 35000,
+            "created": "2024-10-19T12:06:47.921Z",
+            "modified": "2024-10-20T04:55:03.193Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"username\": \"Viral\",\n    \"password\": \"Superusercreation\"\n}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "1ef60ea6-15a1-4025-a5cb-9fc356117dc4",
+            "colId": "26c81a25-73f0-4d87-9956-8a6e42d534a7",
+            "containerId": "",
+            "name": "REFRESH_TOKEN",
+            "url": "http://127.0.0.1:8000/api/token/refresh/",
+            "method": "POST",
+            "sortNum": 45000,
+            "created": "2024-10-20T04:55:09.806Z",
+            "modified": "2024-10-20T04:55:41.208Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcyOTQ4NjM2MiwiaWF0IjoxNzI5Mzk5OTYyLCJqdGkiOiJjYTA3MzQ5MzQxNjM0M2FlODIxMTlmMmNmMjY4Y2RjZCIsInVzZXJfaWQiOjR9.HjGmFzpvRET6Wwtju1s439DFJvo4WjWHb41ffutvUEE\"\n}\n\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "339e3c31-0cae-43fe-856a-faa2c53d3281",
+            "colId": "26c81a25-73f0-4d87-9956-8a6e42d534a7",
+            "containerId": "",
+            "name": "UPDATE_USER",
+            "url": "http://127.0.0.1:8000/api/users/1/",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-10-19T11:53:13.813Z",
+            "modified": "2024-10-20T04:41:08.849Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"RohitSharma\",\n  \"password\": \"runs@200\",\n  \"first_name\": \"Rohit\",\n  \"last_name\": \"Sharma\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI5NDg1NTkzLCJpYXQiOjE3MjkzOTkxOTMsImp0aSI6ImM3MDQxN2NmZTFjOTQyMTI4MzZmZTIwMDJlMWU4MDNiIiwidXNlcl9pZCI6MX0.HNqOavDmJugdcvmaEDEDfvTKS_CUxgZu95I7rjeTOkI"
+            }
+        },
+        {
+            "_id": "79bf3908-fd7a-4fea-8a1d-f0fea29961c6",
+            "colId": "26c81a25-73f0-4d87-9956-8a6e42d534a7",
+            "containerId": "",
+            "name": "DELETE_USER",
+            "url": "http://127.0.0.1:8000/api/users/5/",
+            "method": "DELETE",
+            "sortNum": 52500,
+            "created": "2024-10-20T04:44:19.521Z",
+            "modified": "2024-10-20T04:46:25.610Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI5NDg1ODE5LCJpYXQiOjE3MjkzOTk0MTksImp0aSI6ImU5ZjUyZDI5MTk0ZDQ4MDlhOTY0OWZmYmIxY2EwNTIwIiwidXNlcl9pZCI6NX0.05JVs_ouxkeBARyF5SFMpqS8z5VXS4IafB1y5TdMDn8"
+            }
+        },
+        {
+            "_id": "55ecc892-f7fe-48de-a22c-330f6947c4c5",
+            "colId": "26c81a25-73f0-4d87-9956-8a6e42d534a7",
+            "containerId": "",
+            "name": "GET_USER",
+            "url": "http://127.0.0.1:8000/api/users/1/",
+            "method": "GET",
+            "sortNum": 55000,
+            "created": "2024-10-19T16:22:37.377Z",
+            "modified": "2024-10-19T17:55:33.095Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI5MzYxNTI5LCJpYXQiOjE3MjkzNTc5MjksImp0aSI6ImYxNWE4NjA0OTc1MTQ0OTA4MmQ1ZThkZjViYzFmYTI1IiwidXNlcl9pZCI6MX0.T-qpOtxlieGqhUiQJhmZT3pn6vkJkg7l3TAzpkkVSAI"
+            }
+        },
+        {
+            "_id": "20797925-5b4b-43a1-b87a-e17d8e744c9f",
+            "colId": "26c81a25-73f0-4d87-9956-8a6e42d534a7",
+            "containerId": "",
+            "name": "CREATE_EXPENSES",
+            "url": "http://127.0.0.1:8000/api/expenses/",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-10-19T11:56:50.645Z",
+            "modified": "2024-10-19T15:33:55.599Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"title\": \"Dinner\",\r\n  \"amount\": \"100.00\",\r\n  \"split_type\": \"EQUAL\",\r\n  \"splits\": [\r\n    {\"user\": 1},\r\n    {\"user\": 2}\r\n  ]\r\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI5MzU0MzExLCJpYXQiOjE3MjkzNTA3MTEsImp0aSI6ImU3MWY0MGNlNDgzYTQ0ZjM4OTZkZjNiYmZjNTAxNmVmIiwidXNlcl9pZCI6MX0.x0BiBYd1Pp9-CXGJCji_7A_Vb-9-ltqtxIG3ST4RFnU"
+            }
+        },
+        {
+            "_id": "f8ca9d6a-00d6-40bd-9323-71a490940c4f",
+            "colId": "26c81a25-73f0-4d87-9956-8a6e42d534a7",
+            "containerId": "",
+            "name": "CREATE_EXPENSES_1",
+            "url": "http://127.0.0.1:8000/api/expenses/",
+            "method": "POST",
+            "sortNum": 65000,
+            "created": "2024-10-19T13:48:36.293Z",
+            "modified": "2024-10-19T16:42:49.950Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Party birthday\",\n  \"amount\": \"8000\",\n  \"split_type\": \"EXACT\",\n  \"splits\": [\n    {\"user\": 1, \"amount\": \"5010.00\"},\n    {\"user\": 2, \"amount\": \"2990.00\"}\n  ]\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI5MzU1ODQyLCJpYXQiOjE3MjkzNTIyNDIsImp0aSI6IjEwZTE2NWUxZTY1MDQxODZiZDM5MjYyYjRkOWUzZWQ2IiwidXNlcl9pZCI6MX0.Zx7lMehZtsIZB-0zPyk0xFNfYUuw8WNXc9MmBAqOFBQ"
+            }
+        },
+        {
+            "_id": "15064806-cfad-48e9-87f1-64a8106e1200",
+            "colId": "26c81a25-73f0-4d87-9956-8a6e42d534a7",
+            "containerId": "",
+            "name": "CREATE_EXPENSES_2",
+            "url": "http://127.0.0.1:8000/api/expenses/",
+            "method": "POST",
+            "sortNum": 67500,
+            "created": "2024-10-19T13:48:39.335Z",
+            "modified": "2024-10-19T15:22:17.680Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"title\": \"Vacation\",\r\n  \"amount\": \"1000.00\",\r\n  \"split_type\": \"PERCENTAGE\",\r\n  \"created_by\": 1,\r\n  \"splits\": [\r\n    {\"user\": 1, \"percentage\": \"60.00\"},\r\n    {\"user\": 2, \"percentage\": \"40.00\"}\r\n  ]\r\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI5MzU0ODMzLCJpYXQiOjE3MjkzNTEyMzMsImp0aSI6ImZkMzM0ZWRjMTcwNjQzYmFhNzQ5MmRmYmU4OTc0MjU3IiwidXNlcl9pZCI6M30.eJ31dijpUsYKooRHfYrB6lihiWYjvOIf5_3Wi1eKhRI"
+            }
+        },
+        {
+            "_id": "00cb4311-7d73-4bff-a8cd-0087e673222f",
+            "colId": "26c81a25-73f0-4d87-9956-8a6e42d534a7",
+            "containerId": "",
+            "name": "GET_EXPENSES",
+            "url": "http://127.0.0.1:8000/api/expenses/10/",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-10-19T13:40:10.713Z",
+            "modified": "2024-10-19T18:09:31.811Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI5MzYxNTI5LCJpYXQiOjE3MjkzNTc5MjksImp0aSI6ImYxNWE4NjA0OTc1MTQ0OTA4MmQ1ZThkZjViYzFmYTI1IiwidXNlcl9pZCI6MX0.T-qpOtxlieGqhUiQJhmZT3pn6vkJkg7l3TAzpkkVSAI"
+            }
+        },
+        {
+            "_id": "685121ef-a916-4753-bc0d-ee322f858c90",
+            "colId": "26c81a25-73f0-4d87-9956-8a6e42d534a7",
+            "containerId": "",
+            "name": "UPDATE_EXPENSES",
+            "url": "http://127.0.0.1:8000/api/expenses/1/",
+            "method": "PUT",
+            "sortNum": 75000,
+            "created": "2024-10-19T17:43:09.254Z",
+            "modified": "2024-10-20T04:52:58.190Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Dinner too heavy\",\n  \"amount\": \"10000.00\",\n  \"split_type\": \"EXACT\",\n  \"splits\": [\n    {\"user\": 1, \"amount\":900},\n    {\"user\": 4, \"amount\":9100}\n  ]\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI5NDg2MzYyLCJpYXQiOjE3MjkzOTk5NjIsImp0aSI6IjQzNzIzZDJjNDk2MzQxNjVhOTkzYzJkOWFmMzc5ZTdiIiwidXNlcl9pZCI6NH0.HP3wjPCyy-22BYYIVQCXI7us-Q0vFaWvQLp5aqGqtNI"
+            }
+        },
+        {
+            "_id": "1bed499b-165f-4685-a2c2-77976cb6fcc9",
+            "colId": "26c81a25-73f0-4d87-9956-8a6e42d534a7",
+            "containerId": "",
+            "name": "GET_USER_ALL_EXPENSES",
+            "url": "http://127.0.0.1:8000/api/expenses/user_expenses/",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-10-19T13:40:54.131Z",
+            "modified": "2024-10-19T17:13:08.595Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI5MzYxNTI5LCJpYXQiOjE3MjkzNTc5MjksImp0aSI6ImYxNWE4NjA0OTc1MTQ0OTA4MmQ1ZThkZjViYzFmYTI1IiwidXNlcl9pZCI6MX0.T-qpOtxlieGqhUiQJhmZT3pn6vkJkg7l3TAzpkkVSAI"
+            }
+        },
+        {
+            "_id": "6af2b300-e3d1-4083-9d6e-ec1bf0229cf2",
+            "colId": "26c81a25-73f0-4d87-9956-8a6e42d534a7",
+            "containerId": "",
+            "name": "DELETE_EXPENSES",
+            "url": "http://127.0.0.1:8000/api/expenses/5/",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2024-10-19T17:59:55.247Z",
+            "modified": "2024-10-19T18:00:45.926Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI5MzYxMzg0LCJpYXQiOjE3MjkzNTc3ODQsImp0aSI6ImYyNGIyYjllODY2ODQyNDY4YjQ1ODllNmFiMGM1MmNlIiwidXNlcl9pZCI6NH0.smwSM-nnBBafUYnmTLSkSSqJ2Ak1VD3A8WnlEwikvts"
+            }
+        },
+        {
+            "_id": "cb4cc66f-b353-4278-af1d-9c95138bbeb0",
+            "colId": "26c81a25-73f0-4d87-9956-8a6e42d534a7",
+            "containerId": "",
+            "name": "GET_ALL_EXPENSES",
+            "url": "http://127.0.0.1:8000/api/expenses/overall_expenses/",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2024-10-19T13:43:07.808Z",
+            "modified": "2024-10-19T18:10:39.349Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI5MzY1MDE1LCJpYXQiOjE3MjkzNjE0MTUsImp0aSI6IjUyM2MzZDNmNDMzYTQ1NmQ4OTZhYTAyYWIwZDlkOTMyIiwidXNlcl9pZCI6NH0.QIj_f8db-Ix8eJm2rYv6Y6EVNgsU4j-2Ga7_50zGi_M"
+            }
+        },
+        {
+            "_id": "d3f07e2e-141f-438b-a421-6de8d4aa98a8",
+            "colId": "26c81a25-73f0-4d87-9956-8a6e42d534a7",
+            "containerId": "",
+            "name": "DOWNLOAD_CSV",
+            "url": "http://127.0.0.1:8000/api/expenses/download_balance_sheet/",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2024-10-19T13:44:39.041Z",
+            "modified": "2024-10-20T04:42:15.221Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI5NDg1NzE2LCJpYXQiOjE3MjkzOTkzMTYsImp0aSI6ImNmMzI4MjFkYzQ0ODRkM2NiY2UzM2ExMDY5MGZmZmRiIiwidXNlcl9pZCI6NH0.KgPbxT0bRcmTQIB16l_7ZNlFaC9uPJLesOt8KJ9x3s8"
+            }
+        }
+    ],
+    "ref": "j8BiV7vr4MfHvJeLK8-wJc5uwuu-cgm2Wd7Ijc5gozkDxZHjyLjtgCboohahGPrUSn1iCAXXsTmeXjupJJ4dYg"
+}

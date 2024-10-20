@@ -1,5 +1,21 @@
 # Daily Expenses Sharing Application
 
+## Index
+
+- [Overview](#overview)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Setup Instructions](#setup-instructions)
+- [Admin User](#admin-user)
+- [Authentication](#authentication)
+- [User API Endpoints](#user-management)
+- [Authentication API Endpoints](#authentication)
+- [Expense API Endpoints](#expense-management)
+- [Sample Files](#sample-files)
+- [License](#license)
+
+
+
 ## Overview
 
 This is a backend application built with Django and SQLite for managing daily expenses. Users can create accounts, add expenses, and split them using different methods: equal amounts, exact amounts, and percentages. The application includes API endpoints for user and expense management, along with features to download balance sheets.
@@ -22,10 +38,12 @@ This is a backend application built with Django and SQLite for managing daily ex
 
 ## Tech Stack
 
-- **Framework**: Django
-- **Database**: SQLite
-- **API**: Django REST Framework
-- **Authentication**: JWT (JSON Web Tokens)
+| Component       | Technology             |
+|-----------------|------------------------|
+| **Framework**   | Django                 |
+| **Database**    | SQLite                 |
+| **API**         | Django REST Framework  |
+| **Authentication** | JWT (JSON Web Tokens) |
 
 ## Setup Instructions
 
@@ -61,6 +79,27 @@ This is a backend application built with Django and SQLite for managing daily ex
    python manage.py test expenses
    ```
 
+## Admin User
+
+*IMPORTANT* -> Create this user to run admin-only API Endpoints. Users created by [Create User Endpoint](#create-user) will not have admin privileges.
+
+An admin user can be created using the Django admin panel or by running the following command:
+
+```bash
+python manage.py createsuperuser
+```
+
+## Authentication
+
+All endpoints except for Create User and Obtain Token require authentication using a JWT token. Include the token in the Authorization header as follows:
+
+```
+Authorization: Bearer <your_jwt_token>
+```
+
+Remember to replace placeholder values (like user IDs, amounts, etc.) with actual values when making requests.
+
+
 ## API Endpoints
 
 ### User Management
@@ -68,7 +107,7 @@ This is a backend application built with Django and SQLite for managing daily ex
 #### Create User
 - **URL:** `/api/users/`
 - **Method:** POST
-- **Authorization:** Not Required ( ** future work: Can add email or mobile based OTP )
+- **Authorization:** Not Required ( **future work: Can add email or mobile-based OTP** )
 - **Body:**
    ```json
    {
@@ -205,25 +244,11 @@ This is a backend application built with Django and SQLite for managing daily ex
 - **Method:** GET
 - **Authentication:** Required (Admin Only)
 
-## Authentication
+## Sample Files
 
-All endpoints except for Create User and Obtain Token require authentication using a JWT token. Include the token in the Authorization header as follows:
-
-```
-Authorization: Bearer <your_jwt_token>
-```
-
-Remember to replace placeholder values (like user IDs, amounts, etc.) with actual values when making requests.
-
-## Admin User
-
-An admin user can be created using the Django admin panel or by running the following command:
-
-```bash
-python manage.py createsuperuser
-```
+- [Sample CSV](sample.csv)
+- [Endpoints JSON](thunder-collection_Expenses.json)
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
